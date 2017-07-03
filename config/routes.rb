@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  resource :alive, only: :show
+  root "dashboard#index"
+
+  resources :services, only: [:index, :edit]
+  resources :notifications, only: [:index, :edit, :new]
 end

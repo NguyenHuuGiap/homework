@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.1 (33804) - http://www.bohemiancoding.com/sketch -->
+    <title>11_active</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="11_active">
+            <g id="Group-13">
+                <circle id="Oval" fill="#F0F0F2" cx="8" cy="8" r="8"></circle>
+                <g id="Group" transform="translate(3.000000, 3.000000)" fill="#7A7F99">
+                    <rect id="Rectangle-path" transform="translate(5.044194, 4.955681) rotate(45.000000) translate(-5.044194, -4.955681) " x="0.0442417002" y="4.14318904" width="9.9999041" height="1.62498442"></rect>
+                    <rect id="Rectangle-path" transform="translate(4.955681, 4.955806) rotate(-45.000000) translate(-4.955681, -4.955806) " x="-0.0442707998" y="4.14331404" width="9.9999041" height="1.62498442"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

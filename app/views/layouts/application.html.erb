@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
     <title><%= Rails.application.class.parent_name %></title>
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag "application", media: "all" %>
+
+    <%= yield :specific_page_css %>
+    <%= yield :specific_page_js_on_head %>
   </head>
 
   <body>
-    <%= yield %>
+    <div id="wrapper">
+      <a id="pagetop"></a>
+      <%= render "layouts/header" %>
+      <%= render "layouts/sidebar" %>
+      <main class="mainContents" role="main">
+        <article>
+          <h2><%= yield :title %></h2>
+          <%= yield %>
+        </article>
+      </main>
+      <%= render "layouts/footer" %>
+    </div>
+
+    <%= javascript_include_tag "application" %>
+
+    <%= yield :specific_page_js %>
   </body>
 </html>

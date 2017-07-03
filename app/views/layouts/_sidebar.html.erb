@@ -1,0 +1,20 @@
+<nav role="navigation">
+  <h2><%= t ".title" %></h2>
+  <ul>
+    <li class="nv_ico nv_portal">
+      <a href="#" class="accordion_title"><span><%= t ".system_management" %></span></a>
+      <ul class="accordion_contents">
+        <li><%= link_to t(".services_management"), services_path %></li>
+        <li><a href="#"><%= t ".faq_management" %></a></li>
+        <li><a href="#"><%= t ".terms_management" %></a></li>
+        <li><a href="#"><%= t ".special_commercial_code_management" %></a></li>
+        <li><%= link_to t(".notifications_management"), notifications_path %></li>
+        <li><a href="#"><%= t ".inquiry_management" %></a></li>
+        <li><a href="#"><%= t ".inquiry_notifcation_management" %></a></li>
+        <li><a href="#"><%= t ".inquiry_reply_template_management" %></a></li>
+        <li><a href="#"><%= t ".mail_management" %></a></li>
+        <li><a href="#"><%= t ".settlement_report_data" %></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
