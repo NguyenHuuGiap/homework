@@ -1,5 +1,5 @@
 build:
-  image: chikim/rails5_skeleton # TODO fix
+  image: banlv54/glopla_admin
   environment:
     REPO_URL: git@github.com:globis-org/glopla_admin.git
     EMAIL_USERNAME: sample@sample.com
@@ -24,6 +24,28 @@ build:
     - bundle install
     - framgia-ci run
 
+compose:
+  database:
+    command: mysqld --character-set-server=utf8 --collation-server=utf8_unicode_ci --init-connect='SET NAMES UTF8;'
+    image: mysql
+    environment:
+      MYSQL_DATABASE: glopla_admin
+      MYSQL_USER: test
+      MYSQL_PASSWORD: test
+      MYSQL_ROOT_PASSWORD: root
+
 cache:
   mount:
     - .git
+
+deploy:
+  ssh:
+    host: 172.16.200.52
+    user: deploy
+    commands:
+      - export PATH="$PATH:$HOME/.rvm/bin:$HOME/deploy_bin"
+      - source /home/deploy/.bash_profile
+      - source /home/deploy/.env
+      - localdeploy branch master
+    when:
+      branch: master
