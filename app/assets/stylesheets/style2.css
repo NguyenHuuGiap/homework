@@ -1,0 +1,410 @@
+@charset "UTF-8";
+
+/* ==================== Status Box ===== */
+.fixed_item_box { display: table; width: 100%; border: 4px solid #60667A; border-radius: 4px; box-sizing: border-box; -webkit-box-sizing: border-box; }
+.fixed_item_box dt,
+.fixed_item_box dd { display: table-cell; padding: 6px 15px; font-weight: 600; box-sizing: border-box; -webkit-box-sizing: border-box; }
+.fixed_item_box dt { width: 150px; background: #60667A; text-align: center; color: #fff; }
+.fixed_item_box dd { background: #fff; }
+
+
+/* ==================== Period List ===== */
+h2.toggle_ttl { padding: 10px 15px; background: #1F2757; border-radius: 4px 4px 0px 0px; font-size: 14px; color: #fff; }
+h2.toggle_ttl:before { display: none; }
+#period_list_area span { display: inline-block; margin-left: 20px; }
+#period_list_area span.order { width: 100px; }
+#period_list_area span.reserve { width: 90px; }
+#period_list_area em { margin-right: 100px; }
+#period_list_area span.bdp { width: 130px; }
+#past_period_list_area ul { display: none; }
+#past_period_list_area .period_lst li a { padding-top: 5px; padding-bottom: 5px; }
+
+
+/* ==================== Label List ===== */
+
+h2.haken_kbn_ttl { padding: 10px 15px; background: #1F2757; border-radius: 4px 4px 0px 0px; font-size: 14px; color: #fff; }
+h2.haken_kbn_ttl:before { display: none; }
+.haken_kbn_lst { list-style: none; margin: 0; padding: 0; }
+.haken_kbn_lst li { border-bottom: 2px solid #E4E7E9; }
+.haken_kbn_lst li a { display: block; padding: 15px 15px 15px 30px; background: url(/assets/ico_arr-link.svg) 15px 50% no-repeat #fff; color: #1F2757; text-decoration: none; }
+.haken_kbn_lst li a:hover { background-color: #F2F2F2; color: #6F95BB; }
+.haken_kbn_lst li a em { font-size: 16px; font-style: normal; width: 200px; display: inline-block; }
+.haken_kbn_lst li .billing_name { width: 300px; display: inline-block; }
+.haken_kbn_lst li .contact_person_name { width: 200px; display: inline-block; }
+
+/* ==================== EntryConfirm ===== */
+.data_list_area.label_info_list .btn_mod { float:right; cursor: pointer; }
+.cut_sheet_area.label_info_list { background-color: #F9F9FA; }
+.cut_sheet_area div.sub_title span { line-height: 32px; }
+
+/* ==================== cut_sheet_area ===== */
+.cut_sheet_area { background-color: #B3B3B3; }
+.cut_sheet_area ul { margin: 2px auto; min-height: 32px; padding-left: 0px; clear: both; background-color: #F2F2F2; }
+.cut_sheet_area li { min-height: 32px; line-height: 32px; float: left; padding-left: 6px; padding-right: 6px; list-style: none; }
+.cut_sheet_area li:first-child { width: 148px; background-color: #E5E5E7; color: #1F2757;  font-weight: 600; text-align: center; }
+.cut_sheet_area li:nth-child(n + 2) { width: 708px; background-color: #FFFFFF; }
+.cut_sheet_area li:nth-child(n + 3) { margin-top: 2px; }
+.cut_sheet_area div.sub_title { margin-top: 2px; padding: 5px 15px; font-size: 14px; background-color: #60667A; color: #fff; }
+
+div.message { margin: 10px; }
+.cut_sheet_area table { margin-top: 2px; width: 100%; }
+.cut_sheet_area table th:last-child { border-right: none; }
+
+.toggle_ttl a { color: #fff; }
+.toggle_ttl .toggle_title_btn_trigger { position: absolute; top: -2px; right: 5px; bottom: 0; min-height: 32px; padding: 9px 40px 3px 0; background: url(/assets/ico_arr-down-action.svg) 100% 50% no-repeat; font-size: 12px; color: #1F2757; text-decoration: none; }
+.toggle_ttl .toggle_title_btn_trigger:hover { background-image: url(/assets/ico_arr-down-action_act.svg); color: #6F95BB; text-decoration: underline; }
+.toggle_ttl.is-open .toggle_title_btn_trigger { background-image: url(/assets/ico_arr-up-action.svg); }
+.toggle_ttl.is-open .toggle_title_btn_trigger:hover { background-image: url(/assets/ico_arr-up-action_act.svg); }
+
+/* ==================== Floating Window ===== */
+.floating_window_background { display: none; height: 100%; background-color: rgba(0, 0, 0, 0.2); position: fixed; top: 0; z-index: 99; }
+.floating_window_background .floating_window { position: relative; margin: 50px auto 0 auto; width: 800px; background-color: #FFF; border: 3px solid #333399; }
+.floating_window_background .window_bar { height: 20px; background-color: #1F2757; color: #FFFFFF; padding-left: 5px; padding-top: 5px; padding-bottom: 5px; }
+.floating_window_background .window_close { height: 12px; line-height: 12px; padding: 4px 6px; background-color: #1F2757; display: block; float: right; }
+.floating_window_background .window_close:hover { color: rgb(105,105,105); cursor: pointer; opacity:0.5; }
+.floating_window_background .cut_sheet_area div.sub_title { width: 770px; }
+.floating_window_background .cut_sheet_area  {  }
+.floating_window_background .cut_sheet_area ul { min-height: 24px; }
+.floating_window_background .cut_sheet_area li { min-height: 24px; line-height: 24px; }
+.floating_window_background .cut_sheet_area li:nth-child(n + 2) { width: 628px; }
+.floating_window_background .button_area { background-color: #FFF; padding: 5px 0 5px 0; }
+.floating_window_background #btn_invalid { height: 16px; line-height: 16px; margin: 5px 10px; display: block; float: right; }
+
+#fw070102 .cut_sheet_area li:first-child { width: 170px; }
+#fw070102 .cut_sheet_area li:nth-child(n + 2) { width: 605px; }
+#fw070102 .lastupdate_area { background-color: #FFF; float: right; padding-right: 15px; }
+#fw070102 .button_area:last-child { padding-top: 20px; }
+
+.fm_ttl { font-weight: 600; }
+/* ==================== Login ===== */
+article.non_navi { width: 880px; margin: 0 150px; float: left; }
+section.login { width: 450px; margin: 0 auto; }
+section.login ul { padding: 0; margin: 0 auto; }
+section.login li { height: 32px; line-height: 32px; list-style: none; }
+section.login input { float: right; }
+section.login .btn_fix_action { display: block; margin-right: auto; margin-left: auto; }
+section.login fm_text { width: 100%; }
+input[type="password"] { border: 1px solid #B3B3B3; }
+
+section.not_login > div { margin: 20px auto; display: block; }
+section.not_login > :not(#btn_not_login) { width: 620px; }
+section.login.bdp_login #btn_induction { width: 100%; margin: auto; }
+section.login.bdp_login #btn_induction { display: block; }
+section.login.bdp_login > :not(#btn_induction) { display: none; }
+
+/* ==================== input[type="text"] ===== */
+input[type="text"].search_username { width: 200px; }
+input[type="text"].search_username_kana { width: 200px; }
+input[type="text"].input_seats { width: 20px; border-style: none; }
+input[type="text"].username_first { width: 200px; }
+input[type="text"].username_last { width: 200px; }
+
+/* TODO 郵便番号欄 1つに統合 各画面でclassかidの名前変更する必要あり
+input[type="text"].zipcode1,
+input[type="text"]#zipcode1 { width: 40px; }
+input[type="text"].zipcode2,
+input[type="text"]#zipcode2 { width: 50px; }*/
+input[type="text"].zipcode,
+input[type="text"]#zipcode { width: 80px; }
+
+
+input[type="text"].address1,
+input[type="text"]#address1 { width: 500px; }
+input[type="text"].address2,
+input[type="text"]#address2 { width: 500px; }
+input[type="text"].first_name,
+input[type="text"]#first_name { width: 200px; }
+input[type="text"].last_name,
+input[type="text"]#last_name { width: 200px; }
+/* TODO 電話番号欄 1つに統合 各画面でclassかidの名前変更する必要あり
+input[type="text"].tel1,
+input[type="text"]#tel1 { width: 50px; }
+input[type="text"].tel2,
+input[type="text"]#tel2 { width: 50px; }
+input[type="text"].tel3,
+input[type="text"]#tel3 { width: 50px; }*/
+input[type="text"].tel,
+input[type="text"]#tel { width: 130px; }
+
+input[type="text"].email,
+input[type="text"]#email { width: 500px; }
+input[type="text"].department,
+input[type="text"]#department { width: 500px; }
+input[type="text"].position,
+input[type="text"]#position { width: 256px; }
+input[type="text"].company_name,
+input[type="text"]#company_name,
+input[type="text"].billing_name,
+input[type="text"]#billing_name { width: 500px; }
+input[type="text"]#birth_year { width: 50px; }
+textarea#information { width: 600px; height: 96px; }
+input[type="text"].signature_username { width: 300px; }
+input[type="text"].signature_company_name { width: 300px; }
+.optional_input:after { content: "(任意)"; color: #1F2757; font-size: 10px; margin-left: 5px; }
+
+/* ==================== OrderList ===== */
+#bdp_entry_list_area .students_lst .situation label:first-child { color: #60667A; font-style: normal; }
+#bdp_entry_list_area .students_lst .situation label:last-child { color: #FFF; font-style: normal; background-color: #60667A; border: 2px solid #60667A; padding: 1px 10px; border-radius: 4px; }
+#bdp_entry_list_area .students_lst .situation.unapproved label:first-child { display: inline; }
+#bdp_entry_list_area .students_lst .situation.unapproved label:last-child { display: none; }
+#bdp_entry_list_area .students_lst .situation.approved label:first-child { display: none; }
+#bdp_entry_list_area .students_lst .situation.approvad label:last-child { display: inline; }
+.data_list_area .students_lst th:nth-child(1) { width: 29px; }
+.data_list_area .students_lst th:nth-child(2) { width: 90px; }
+.data_list_area .students_lst th:nth-child(3) { width:140px; }
+.data_list_area .students_lst th:nth-child(4) { width: 82px; }
+/* no.5の科目は動的 */
+.data_list_area .students_lst th:nth-child(6) { width: 40px; }
+.data_list_area .students_lst th:nth-child(7) { width:160px; }
+.data_list_area .students_lst th:nth-child(8) { width: 29px; }
+
+/* ==================== ClassList ===== */
+/*
+.data_list_area.class_list .subject { width: 250px; }
+*/
+.data_list_area.class_list .dayofweek { width: 30px; }
+.data_list_area.class_list .timesofday { width: 74px; }
+.data_list_area.class_list .teacher { width: 84px; }
+.data_list_area.class_list .school { width: 40px; }
+.data_list_area.class_list .class { width: 58px; }
+.data_list_area.class_list .seatavailability {  }
+.data_list_area.class_list .seats {  }
+.data_list_area.class_list .firsttime { width: 36px; }
+.data_list_area.class_list .remarks { width: 24px; }
+.data_list_area.class_list td { padding-right: 5px !important; padding-left: 5px; }
+
+/* ==================== ClassInfo ===== */
+#fw080101 .remarks { min-height: 75px; }
+
+/* ==================== mbaAdmissionEntry ===== */
+#w060102 .cut_sheet_area.mbaAdmissionEntry,
+#w060112 .cut_sheet_area.mbaAdmissionEntry { background-color: #F9F9FA; }
+#w060102 .message:nth-child(-n+2) { margin-left: 0px; display: inline-block; font-size: 15px; font-weight: bolder; }
+#w060102 #billing + .message { margin-top: 40px; }
+#w060102 #admission_area .school_haken { float:right; }
+#w060112 #admission_area .school_haken { height: 35px; }
+#w060112 #admission_area .school_haken .fm_select { float:right; }
+
+/* ==================== complete ===== */
+.cut_sheet_area.complete_info { background-color: #FFF; }
+.cut_sheet_area.complete_info th,
+.cut_sheet_area.complete_info td { padding-top: 5px; padding-bottom: 5px; border: none; }
+.complete_msg { width: 100%; display: inline-block; padding: 10px 10px 10px 10px; min-height: 32px; border-radius: 4px; color: #1F2757; text-decoration: none; box-sizing: border-box; -webkit-box-sizing: border-box; }
+
+/* ==================== warning ===== */
+.warning { width: 100%; display: inline-block; padding: 10px 10px 10px 50px; min-height: 32px; background: #F46036; border-radius: 4px; color: #FFF; font-weight: 600; text-decoration: none; box-sizing: border-box; -webkit-box-sizing: border-box; background-image: url(/assets/ico_alert.svg); background-position: 15px 50%; background-repeat: no-repeat; }
+
+/* ==================== settings ===== */
+.settings .btn_delete { display: inline-block; padding: 6px 10px 5px 10px; min-height: 32px; background: #FF0000; border-radius: 4px; color: #FFF; font-weight: 600; text-decoration: none; box-sizing: border-box; -webkit-box-sizing: border-box; margin: 2px 10px 2px; float: right; width: 100px; text-align: center; }
+.settings .btn_auto_action { margin-right: 10px; float: right; width: 100px; text-align: center; }
+.settings .btn_auto_support { margin-left: 10px; float: left; width: 100px; text-align: center; }
+.settings label+input[type="radio"],
+.settings input[type="text"]+label { margin-left: 20px; }
+.settings label+input[type="text"] { margin-left: 5px; }
+.settings input[type="radio"]+label,
+.settings input[type="checkbox"]+label { margin-left: 5px; }
+.settings label+label { margin-left: 4px; }
+.floating_window_background .settings .cut_sheet_area ul { min-height: 32px; }
+.floating_window_background .settings .cut_sheet_area li { min-height: 32px; line-height: 32px; }
+.settings input[type="text"]+select { margin-left: 20px; }
+
+/* TODO ハイフン 電話番号、郵便番号統合により不要 各画面対応が必要 */
+input[type="text"]+label.hyphen { margin-left: 5px; }
+
+/* ==================== CompanyProfileList ===== */
+#w070301 .settings.data_list_area th { border-right: 2px solid #E4E7E9; }
+#w070301 .settings.data_list_area tr:nth-child(1) th:nth-child(n + 2) { border-bottom: 2px solid #E4E7E9; }
+#w070301 .settings.data_list_area tr:nth-child(1) th:last-child { border: none; }
+#w070301 .haken_kbn { width: 85px; }
+#w070301 .address { width: 240px; }
+
+/* ペン版 */
+#w070301 .settings .btn_auto_support { margin-left: 0px; width: 40px; float: left; }
+#w070301 .settings.data_list_area tr:nth-child(1) th:last-child { width: 45px; }
+#w070301 .settings .btn_ico:before { margin: 0px; }
+
+/*「編集」版
+#w070301 .settings.data_list_area tr:nth-child(1) th:last-child { width: 50px; }
+#w070301 .settings .btn_auto_support { margin-left: 0px; width: 50px; float: left; }*/
+
+/* ==================== CompanyProfileListInfo ===== */
+#fw070302 section#responsible_party { margin: 0px; }
+#fw080102 section#responsible_party { margin: 0px; }
+#fw080102 section#billing ul:nth-child(3) li label:first-child { display: block; float: left; width: 50px; }
+
+/* ==================== StudentSheet ===== */
+
+.search_sct_btn_area button { margin: 5px; float: right; }
+.float_clear { clear: both; }
+#gender input[type="radio"] { margin-right: 5px; }
+#kyozai_area { display: none; }
+
+/* ==================== StudentList ===== */
+.student_list .btn_search { float: right; }
+.cut_sheet_area.student_list { background-color: #FFF; }
+section.upload_button_area { margin: 10px 0px; }
+.control_sct .control_btn_download a { margin-right: 5px; }
+.student_list input[type="checkbox"]:nth-child(n + 2) { margin-left: 20px; }
+.student_list .button { cursor: pointer; }
+
+/* ==================== MbaExaminationResultList ===== */
+#checkbox_area { display: inline-block; }
+.data_list_area.mba_examination_result_list th:nth-child(1) { width: 84px; }
+.data_list_area.mba_examination_result_list th:nth-child(4),
+.data_list_area.mba_examination_result_list th:nth-child(5) { width: 48px; }
+.data_list_area.mba_examination_result_list th:nth-child(7) { width: 36px; }
+
+/* gray out sample1
+.cell_gray_out { background-color: #F0F0F2; } */
+
+/* gray out sample2 */
+.cell_gray_out { background-color: #B3B3B3; }
+
+/* ==================== BdpReserveList ===== */
+.bdp_reserve_list th:nth-child(1) { width: 88px; }
+/*.bdp_reserve_list th:nth-child(2) { width: px; }*/
+.bdp_reserve_list th:nth-child(3) { width: 24px; }
+.bdp_reserve_list th:nth-child(4) { width: 84px; }
+.bdp_reserve_list th:nth-child(5) { width: 96px; }
+.bdp_reserve_list th:nth-child(6) { width: 45px; }
+.bdp_reserve_list th:nth-child(7) { width: 68px; }
+.bdp_reserve_list th:nth-child(8) { width: 45px; }
+.bdp_reserve_list th:nth-child(9) { width: 45px; }
+.bdp_reserve_list th:nth-child(10) { width: 36px; }
+.bdp_reserve_list th:nth-child(11) { width: 55px; }
+.bdp_reserve_list td { text-align: center; }
+.bdp_reserve_list td:nth-child(1),
+.bdp_reserve_list td:nth-child(2),
+.bdp_reserve_list td:nth-child(5) { text-align: left; }
+
+/* ==================== BdpSubjectList ===== */
+#bdp_subject_list th:nth-child(1) { width: 230px; }
+/*
+#bdp_subject_list th:nth-child(2) { width: 50px; }
+#bdp_subject_list th:nth-child(3) { width: 478px; }
+*/
+#bdp_subject_list th:nth-child(2) { width: 528px; }
+/*#bdp_subject_list td:nth-child(4) { text-align: center; }*/
+#bdp_subject_list th { visibility:hidden; height: 0px; padding: 0px; }
+/*#bdp_subject_list td:nth-child(1) { background-color: #D8D8D8; }*/
+#bdp_subject_list td.course_bc { background-color: #D8D8D8; }
+#bdp_subject_list td.Required { color: #ffffff; background-color: #cc0000; }
+#bdp_subject_list td.Elective { color: #ffffff; background-color: #000099; }
+#bdp_subject_list td.SelectRequired { color: #080738; background-color: #888888; }
+
+#bdp_subject_list_sc th:nth-child(1) { width: 230px; }
+#bdp_subject_list_sc th:nth-child(2) { width: 528px; }
+#bdp_subject_list_sc th { visibility:hidden; height: 0px; padding: 0px; }
+#bdp_subject_list_sc td.course_bc { background-color: #D8D8D8; }
+
+/* ==================== BdpEntry ===== */
+.img_cancel { margin-top: 0px; }
+.img_cancel { margin-left: 5px; }
+
+/* ==================== SecurityAgreement ===== */
+#agreement_area object { margin-right: auto; margin-left: auto; display: block; width: 840px; height: 200px; border: 1px solid #1F2757; background: #fff; }
+#signature label { margin-right: 10px; }
+#signature label+input[type="text"] { margin: 5px 5px; }
+div.input_area label { width: 100px; display: inline-block; }
+
+/* ==================== OrderSettings ===== */
+.bdp_url_box { display: table; width: 100%; border: 4px solid #60667A; border-radius: 4px; box-sizing: border-box; -webkit-box-sizing: border-box; }
+.bdp_url_box dt,
+.bdp_url_box dd { display: table-cell; padding: 6px 15px; font-weight: 600; box-sizing: border-box; -webkit-box-sizing: border-box; }
+.bdp_url_box dt { width: 250px; background: #60667A; text-align: center; color: #fff; }
+.bdp_url_box dd { background: #fff; }
+.mygol_id_ps  th { width: 100px; }
+.mygol_id_ps  td { width: 150px; }
+.detail_settings .detail_settings_btn_trigger { min-height: 32px; padding: 9px 40px 3px 0; background: url(/assets/ico_arr-down-action.svg) 100% 50% no-repeat; font-size: 12px; color: #1F2757; text-decoration: none; }
+.detail_settings .detail_settings_btn_trigger:hover { background-image: url(/assets/ico_arr-down-action_act.svg); color: #6F95BB; text-decoration: underline; }
+.detail_settings.is-open .detail_settings_btn_trigger { background-image: url(/assets/ico_arr-up-action.svg); }
+.detail_settings.is-open .detail_settings_btn_trigger:hover { background-image: url(/assets/ico_arr-up-action_act.svg); }
+.order_settings .sub_title { background-color: #E5E5E7; height: 32px; line-height: 32px; padding-left: 5px; }
+.order_settings .tgl_check { margin-left: 10px; }
+.order_settings .tgl_detail { margin-left: 30px; }
+.order_settings .tgl_detail input[type="text"] { width: 20px; border-style: none; }
+.order_settings .tgl_detail input[type="text"] { width: 20px; border-style: none; }
+.order_settings #subject_limit table { width: 100%; }
+.order_settings #subject_limit tbody th:first-child { width: 200px; }
+.cut_sheet_area.order_settings { margin-top: 20px; }
+.cut_sheet_area.order_settings li:first-child { width: 320px; }
+.cut_sheet_area.order_settings li:nth-child(n+2) { width: 536px; }
+
+/* ==================== MygolUserList ===== */
+.mygol_user_list table tr:first-child th:nth-child(1) { width: 70px; }
+.mygol_user_list table tr:first-child th:nth-child(2) { width: 200px; }
+.mygol_user_list table tr:first-child th:nth-child(3) { width: 90px; }
+.mygol_user_list table tr:first-child th:nth-child(5) { width: 90px; }
+.mygol_user_list table tr:nth-child(2) th:nth-child(1) { width: 70px; }
+.mygol_user_list table tr:nth-child(2) th:nth-child(2) { width: 70px; }
+
+/* ==================== PasswordChange ===== */
+.cut_sheet_area.password_area { background-color: #FFF; }
+
+.input-invalid { background: #F3896B; }
+
+.btn_auto_support,.btn_fix_support,
+.btn_auto_action,.btn_fix_action,
+.btn_fix_induction { cursor: pointer; }
+
+/* ==================== 050101 ReportList ===== */
+#w050101 .control_btn_download { float: right; margin-bottom: 10px; }
+
+/* ==================== 050102 ReportBySubject, 050103 ReportByStudents ===== */
+#w050102 .cut_sheet_area table { margin-bottom: -2px; }
+#w050102 .cut_sheet_area .sub_title,
+#w050103 .cut_sheet_area .sub_title { border-top: 10px solid #F9F9FA; }
+#w050103 .cut_sheet_area table { margin-bottom: -2px; }
+
+/* ==================== 050201 MbaCreditList ===== */
+#w050201 .data_list_area td:nth-of-type(6) { background-color: #C2D2EA; }
+#w050201 .data_list_area th { width: 90px; vertical-align: middle; }
+
+/* ==================== 050202 ===== */
+#w050202 #gmap_area { width: 35%; }
+#w050202 #point_area table { border-collapse: collapse; }
+/* 持込組み込み
+#w050202 #point_area.data_list_area tr th { border-right: 2px solid #E4E7E9; vertical-align: middle; text-align: center; }
+#w050202 #point_area.data_list_area tr:nth-child(2) th:nth-child(1) { border-right: 2px solid #E4E7E9; }
+#w050202 #point_area.data_list_area tr:nth-child(2) th:nth-child(2) { border-right: 2px solid #E4E7E9; border-top: 2px solid #E4E7E9; }
+#w050202 #point_area tbody tr:nth-child(2) { border-top: 2px solid #B3B3B3; }
+#w050202 #point_area td:nth-child(3) { background-color: #C2D2EA; }
+#w050202 #point_area tr:nth-child(4) td:nth-child(3){ background-color: transparent; }
+#w050202 #point_area tr:nth-child(4) td:nth-child(4){ background-color: #C2D2EA; }
+#w050202 #point_area td:nth-child(7) { background-color: #C2D2EA; }
+#w050202 #point_area tr:nth-child(4) td:nth-child(7){ background-color: transparent; }
+#w050202 #point_area tr:nth-child(4) td:nth-child(8){ background-color: #C2D2EA; }*/
+
+/* 持込 右 */
+#w050202 #point_area.data_list_area tr th { border-right: 2px solid #E4E7E9; }
+#w050202 #point_area.data_list_area tr th:last-child { border-right: 0px; }
+#w050202 #point_area td:nth-child(3) { background-color: #C2D2EA; }
+#w050202 #point_area tr:nth-child(4) td:nth-child(3){ background-color: transparent; }
+#w050202 #point_area tr:nth-child(4) td:nth-child(4){ background-color: #C2D2EA; }
+#w050202 #point_area td:nth-child(6) { background-color: #C2D2EA; }
+#w050202 #point_area tr:nth-child(4) td:nth-child(6){ background-color: transparent; }
+#w050202 #point_area tr:nth-child(4) td:nth-child(7){ background-color: #C2D2EA; }
+
+
+#cell_border { padding: 1px; }
+
+/* ==================== 050203 MbaCreditStatusInfo ===== */
+#w050203 .cut_sheet_area .sub_title { border-top: 10px solid #F9F9FA; }
+#w050203 .cut_sheet_area table { margin-bottom: -2px; }
+
+/* ==================== 130102 ===== */
+#w130102 .complete_msg { margin-bottom: 20px; }
+#w130102 .btn_close { margin-top: 50px; }
+
+
+/* ==================== 共通 =====*/
+.small_annotation { font-size: 12px; }
+#billing ul:nth-of-type(2) li:nth-of-type(3) label:first-child { display: block; float:left; width: 95px; }
+#billing ul:nth-of-type(2) li:nth-of-type(4) label:first-child { display :block; float:left; width: 95px; }
+
+/* ==================== 070402 OrderSettingConfirm =====*/
+#w070402 .cut_sheet_area .sub_title:nth-child(3) { border-top: 10px solid #F9F9FA; }
+#w070402 .cut_sheet_area.order_settings li:first-child { padding-left: 12px; padding-right: 0px; background-color: #E5E5E7; text-align: initial; }
+
+#w070401 .detail_settings  { margin-top: 25px; }
+#w070401 .detail_settings .detail_settings_btn_trigger { padding-right: 30px; }

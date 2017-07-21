@@ -2,3 +2,5 @@ carrierwave:
   fog_cache_control: 1.hour
   fog_expiration: 1.hour
   fog_public: false
+
+globis_url: http://www.globis.co.jp/en/

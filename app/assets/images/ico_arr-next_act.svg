@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.1 (33804) - http://www.bohemiancoding.com/sketch -->
+    <title>15_active</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="15_active">
+            <g id="To-top_24" transform="translate(12.000000, 12.000000) rotate(-270.000000) translate(-12.000000, -12.000000) ">
+                <g id="icon_desktop" transform="translate(-0.000000, 0.000000)">
+                    <g id="To-top">
+                        <g id="to_top" transform="translate(0.000000, 0.000000)">
+                            <path d="M5.3,0 L18.6,0 C21.6,0 24,2.4 24,5.3 L24,18.6 C24,21.5 21.6,23.9 18.7,23.9 L5.3,23.9 C2.4,24 -1.77635684e-15,21.6 -1.77635684e-15,18.7 L-1.77635684e-15,5.3 C-1.77635684e-15,2.4 2.4,0 5.3,0 L5.3,0 Z" id="Rectangle-8" fill="#F0F0F2"></path>
+                            <polygon id="Triangle" fill="#7A7F99" points="12 6 18 16.5 6 16.5"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

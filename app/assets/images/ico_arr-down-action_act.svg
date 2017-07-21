@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>btn copy 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop_page1_W1200px" transform="translate(-1360.000000, -453.000000)">
+            <g id="search" transform="translate(430.000000, 214.000000)">
+                <g id="Group-19">
+                    <g id="Group-31" transform="translate(780.000000, 196.000000)">
+                        <g id="btn-copy-3" transform="translate(166.000000, 59.000000) scale(1, -1) translate(-166.000000, -59.000000) translate(150.000000, 43.000000)">
+                            <g id="Group-34">
+                                <rect id="Rectangle-8" fill="#F0F0F2" x="0" y="0" width="32" height="32" rx="8"></rect>
+                                <polygon id="Shape" fill="#7A7F99" points="22 18.9 17.1 14.1 16 13 14.9 14.1 10 18.9 11.1 20 16 15.2 20.9 20"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

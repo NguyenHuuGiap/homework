@@ -1,0 +1,43 @@
+ja:
+  layouts:
+    header:
+      log_out: ログアウト
+    footer:
+      copyright: GLOBIS All Rights Reserved.
+    sidebar:
+      title: GLOPLA ADMIN
+      system_management: システム管理
+      services_management: サービス管理
+      faq_management: FAQ管理
+      terms_management: 利用規約管理
+      special_commercial_code_management: 特商法管理
+      notifications_management: お知らせ管理
+      inquiry_management: お問い合わせ管理
+      inquiry_notifcation_management: お問い合わせ通知先管理
+      inquiry_reply_template_management: お問い合わせ返信テンプレ管理
+      mail_management: メール管理
+      settlement_report_data: 決済報告データ
+  dashboard:
+    index:
+      title: Dashboard
+  services:
+    index:
+      title: Services
+    edit:
+      title: Edit Services
+  notifications:
+    index:
+      title: Notifications
+    edit:
+      title: Edit Notifications
+    new:
+      title: New Notifications
+  breadcrumbs:
+    dashboard: Dashboard
+    services: Services
+    edit_service: Edit service
+    notifications: Notifications
+    edit_notification: Edit notification
+    new_notification: New notification
+
+
