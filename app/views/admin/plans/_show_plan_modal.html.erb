@@ -1,0 +1,46 @@
+<div class="floating_window settings modal modal-body">
+  <div style="width: 800px;">
+    <div class="window_bar"><%= t ".title" %><div class="window_close" onclick="hideModal(this)">×</div></div>
+    <div class="data_area">
+      <%= form_for [:admin, @plan] do |f| %>
+        <section class="cut_sheet_area">
+          <div class="clearfix button_area invalid_area">
+          </div>
+          <div class="errors"></div>
+          <ul>
+            <li>
+              <%= t ".name" %>
+            </li>
+            <li>
+              <%= f.object.name %>
+            </li>
+          </ul>
+          <ul>
+            <li><%= t ".product" %></li>
+            <li>
+              <%= f.object.product.name if f.object.product.present? %>
+            </li>
+          </ul>
+          <ul>
+            <li><%= t ".updated_at" %></li>
+            <li>
+              <%= l f.object.created_at, format: :format_datetime %>
+            </li>
+          </ul>
+          <ul>
+            <li><%= t ".created_at" %></li>
+            <li>
+              <%= l f.object.updated_at, format: :format_datetime %>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <div class="clearfix button_area">
+            <div class="btn_auto_support" id="btn_cancel"
+              onclick="hideModal(this)"><%= t ".cancel" %></div>
+          </div>
+        </section>
+      <% end %>
+    </div>
+  </div>
+</div>

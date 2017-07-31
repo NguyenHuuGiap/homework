@@ -1,0 +1,39 @@
+<div class="floating_window settings modal modal-body">
+  <div style="width: 800px;">
+    <div class="window_bar"><%= t ".title" %><div class="window_close" onclick="hideModal(this)">×</div></div>
+    <div class="data_area">
+      <%= form_for [:admin, @plan] do |f| %>
+        <section class="cut_sheet_area">
+          <div class="clearfix button_area invalid_area">
+          </div>
+          <div class="errors"></div>
+          <ul>
+            <li>
+              <%= t ".name" %>
+            </li>
+            <li id="length">
+              <%= f.text_field :name %>
+            </li>
+          </ul>
+          <ul>
+            <li><%= t ".product.name" %></li>
+            <li>
+              <span class="fm_select">
+                <%= f.select :product_id,
+                  options_for_select(@products.collect {|p| [ p.name, p.id ] },
+                  selected_plan(@plan)) %>
+              </span>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <div class="clearfix button_area">
+            <div class="btn_auto_support" id="btn_cancel"
+              onclick="hideModal(this)"><%= t ".cancel" %></div>
+            <%= f.submit render_i18n_edit_create(@plan), class: "btn_auto_action", id: "btn_create" %>
+          </div>
+        </section>
+      <% end %>
+    </div>
+  </div>
+</div>

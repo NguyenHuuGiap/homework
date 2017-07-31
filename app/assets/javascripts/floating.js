@@ -18,7 +18,7 @@ function openFloatingClassInfo(order) {
     $('<ul>'
       +'<li>第'+ (parseInt(sind) + 1) +'回</li>'
       +'<li>'+ formatData(order.schedule[sind].date) + '　(' + order.dayofweek+ '）　' + order.timesofday + '</li>'
-      +'</ul>').appendTo('#fw080101 .schedules');  
+      +'</ul>').appendTo('#fw080101 .schedules');
   }
 
   // フローティングでクラス詳細画面を表示する
@@ -42,7 +42,7 @@ function openFloatingStudent(record) {
 function openFloatingHekenkubunEdit(record) {
     var responsible_part = record.responsible_party;
     var billing = record.billing;
-    
+
     $(".floating_window_background #haken_kubun_name").val(record.haken_kubun_name);
     // 派遣責任者情報
     $(".floating_window_background #responsible_party .company_name").val(responsible_part.company_name);
@@ -136,7 +136,7 @@ function openFloatingReview(record) {
 
 /* <共通>フローティングを開く */
 function showFloatingWindow(floatingWindow) {
-  current_scrollY = $( window ).scrollTop(); 
+  current_scrollY = $( window ).scrollTop();
   marginLR = $(window).width() - $('#wrapper').outerWidth();
   $( '#wrapper' ).css( {
     position: 'fixed',
@@ -174,4 +174,8 @@ function closeFloating(floatingWindow) {
   $( '#wrapper' ).attr( { style: '' } );
   $( 'html, body' ).prop( { scrollTop: current_scrollY } );
   floatingWindow.hide('fade', '', slideDwonSpeed);
+}
+
+function hideModal(id_btn){
+  $(id_btn).parents('.floating_window_background').hide();
 }

@@ -76,7 +76,7 @@ nav .nv_btn { margin-top: 20px; }
 nav .nv_btn a { display: block; padding: 24px 15px; background: #E4E7E9; border-radius: 4px; color: #1F2757; text-decoration: none; }
 nav .nv_btn a:hover { background-color: #F2F2F2; color: #1F2757; }
 
-/* Icon */
+/* Icon */
 nav .nv_ico > a { padding-left: 55px; background-position: 20px 50%; background-repeat: no-repeat; font-weight: 600;
     -webkit-background-size: 24px;
     background-size: 24px;
@@ -134,7 +134,7 @@ article { float: right; width: 880px; }
 .lnk_txt:hover { color: #6F95BB; text-decoration: underline; }
 
 /* ==================== Button ===== */
-/* support */
+/* support */
 .btn_auto_support,
 .btn_fix_support { display: inline-block; padding: 6px 10px 5px 10px; min-height: 32px; background: #E5E5E7; border-radius: 4px; color: #1F2757; font-weight: 600; text-decoration: none;
     box-sizing: border-box;
@@ -252,7 +252,6 @@ h2.info_ttl:before { display: none; }
 .search_sct_btm .search_lst td { padding: 15px 0 5px; }
 .search_sct_btm .search_lst tr:last-child > th,
 .search_sct_btm .search_lst tr:last-child > td { border-bottom: none; }
-
 .search_sct_btm .search_sct_btn { position: relative; text-align: center; }
 .search_sct_btm .search_sct_btn_trigger { position: absolute; bottom: 0; right: 0; min-height: 32px; padding: 9px 40px 3px 0; background: url(/assets/ico_arr-down-action.svg) 100% 50% no-repeat; font-size: 12px; color: #1F2757; text-decoration: none;
     -webkit-box-sizing: border-box;
@@ -400,7 +399,7 @@ label.fm_radio input[type="radio"]:checked + span:after { display: block; width:
 /* checkbox*/
 .students_lst label.fm_check input[type="checkbox"] { margin-right: 0; }
 
-/* situation */
+/* situation */
 .students_lst .situation { text-align: center; white-space: nowrap; font-weight: 600; cursor: pointer; }
 .students_lst .situation span { display: inline-block; width: 50%; padding: 1px 5px;
     -webkit-box-sizing: border-box;
@@ -419,7 +418,7 @@ label.fm_radio input[type="radio"]:checked + span:after { display: block; width:
 /* area*/
 .students_lst .area { width: 65px; text-align: center; }
 
-/* student */
+/* student */
 .students_lst .student {}
 .students_lst .student_inr { display: table; width: 100%; }
 .students_lst .student .student_name,
@@ -588,3 +587,27 @@ main,
 }
 /* End hide from IE-mac */
 
+.pagination {
+  display: inline;
+  list-style-type: none;
+  margin: 0 auto;
+}
+
+.pagination li a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+}
+
+.pagination li.active a {
+  background-color: #727272;
+  color: white;
+  border: 1px solid #727272;
+}
+
+.mg-link {
+  margin-right: 5px;
+}

@@ -15,8 +15,6 @@
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 require "database_cleaner"
-require "devise"
-require "shoulda/matchers"
 require "simplecov"
 require "simplecov-json"
 require "simplecov-rcov"
@@ -54,7 +52,6 @@ RSpec.configure do |config|
     mocks.verify_partial_doubles = true
   end
 
-  config.include Devise::TestHelpers, type: :controller
 # The settings below are suggested to provide a good initial experience
 # with RSpec, but feel free to customize to your heart's content.
 =begin
@@ -99,10 +96,4 @@ RSpec.configure do |config|
   # as the one that triggered the failure.
   Kernel.srand config.seed
 =end
-  Shoulda::Matchers.configure do |config|
-    config.integrate do |with|
-      with.test_framework :rspec
-      with.library :rails
-    end
-  end
 end

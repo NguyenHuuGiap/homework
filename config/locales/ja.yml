@@ -1,4 +1,7 @@
 ja:
+  time:
+    formats:
+      format_datetime: "%Y/%m/%d %H:%M"
   layouts:
     header:
       log_out: ログアウト
@@ -17,6 +20,36 @@ ja:
       inquiry_reply_template_management: お問い合わせ返信テンプレ管理
       mail_management: メール管理
       settlement_report_data: 決済報告データ
+  admin:
+    btn:
+      create: 作る
+      edit: エディット
+    plans:
+      index:
+        title: 計画
+      plans:
+        name: 名
+        created_at: 〜で作成された
+        updated_at: で更新された
+        product: プロダクト
+      new_plan_modal:
+        title: 計画
+        name: 名
+        create: 作る
+        edit: エディット
+        btn_close: 無効にする
+        cancel: キャンセル
+        product:
+          name: プロダクト
+      show_plan_modal:
+        title: 計画
+        name: 名
+        product: プロダクト
+        create: 作る
+        btn_close: 無効にする
+        created_at: 〜で作成された
+        updated_at: で更新された
+        cancel: キャンセル
   dashboard:
     index:
       title: Dashboard
@@ -39,5 +72,12 @@ ja:
     notifications: Notifications
     edit_notification: Edit notification
     new_notification: New notification
-
-
+  messages:
+    confirm: Are You Sure
+    create_success: "Create Success"
+    create_fail: "Create Fail"
+    update_success: "Update Success!"
+    update_fail: "Update Fail!"
+    load_data_fail: "Load data Fail"
+    delete_success: "Delete Success"
+    delete_fail: "Delete Fail"

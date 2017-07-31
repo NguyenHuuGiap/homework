@@ -4,3 +4,5 @@ carrierwave:
   fog_public: false
 
 globis_url: http://www.globis.co.jp/en/
+per_page:
+  plan: 10

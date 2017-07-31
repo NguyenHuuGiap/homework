@@ -57,7 +57,7 @@ div.message { margin: 10px; }
 .toggle_ttl.is-open .toggle_title_btn_trigger:hover { background-image: url(/assets/ico_arr-up-action_act.svg); }
 
 /* ==================== Floating Window ===== */
-.floating_window_background { display: none; height: 100%; background-color: rgba(0, 0, 0, 0.2); position: fixed; top: 0; z-index: 99; }
+.floating_window_background { position: fixed; top: 0; z-index: 99; }
 .floating_window_background .floating_window { position: relative; margin: 50px auto 0 auto; width: 800px; background-color: #FFF; border: 3px solid #333399; }
 .floating_window_background .window_bar { height: 20px; background-color: #1F2757; color: #FFFFFF; padding-left: 5px; padding-top: 5px; padding-bottom: 5px; }
 .floating_window_background .window_close { height: 12px; line-height: 12px; padding: 4px 6px; background-color: #1F2757; display: block; float: right; }

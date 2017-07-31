@@ -1,0 +1,6 @@
+<% provide(:title, t(".title")) %>
+<div class="floating_window_background modal fade" id="modalPlan"></div>
+<div id="flash-message">
+  <%= render "admin/shared/flash", flash: flash %>
+</div>
+<%= render "admin/plans/plans", plans: @plans %>
